@@ -3,43 +3,43 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Brain, Layers, Zap } from "lucide-react";
+import { Database, Brain, Code2, Zap } from "lucide-react";
 
 const skills = [
   {
-    icon: Code2,
-    title: "Full-Stack Development",
-    description: "Building robust web applications with modern frameworks and best practices.",
-    technologies: ["TypeScript", "JavaScript", "React", "Node.js"],
+    icon: Database,
+    title: "Data Engineering",
+    description: "Building robust ETL pipelines and data infrastructure for analytics and ML at scale.",
+    technologies: ["Python", "SQL", "Spark", "Airflow"],
   },
   {
     icon: Brain,
     title: "AI & Machine Learning",
-    description: "Developing intelligent solutions using cutting-edge ML models and techniques.",
-    technologies: ["Python", "TensorFlow", "OpenAI", "LLMs"],
+    description: "Developing ML infrastructure, feature stores, and deploying models to production.",
+    technologies: ["TensorFlow", "PyTorch", "MLflow", "LLMs"],
   },
   {
-    icon: Layers,
-    title: "System Design",
-    description: "Architecting scalable systems with focus on performance and reliability.",
-    technologies: ["Go", "C++", "Distributed Systems"],
+    icon: Code2,
+    title: "Full-Stack Development",
+    description: "Creating web applications and tools with modern frameworks and best practices.",
+    technologies: ["TypeScript", "React", "Node.js", "Next.js"],
   },
   {
     icon: Zap,
-    title: "Automation",
-    description: "Creating efficient workflows and automated solutions to boost productivity.",
-    technologies: ["Selenium", "Airflow", "Jenkins"],
+    title: "Automation & Tools",
+    description: "Building automation solutions, bots, and developer tools for productivity.",
+    technologies: ["Selenium", "Chrome Extensions", "APIs"],
   },
 ];
 
 const techIcons: Record<string, string> = {
   Python: "🐍",
+  SQL: "🗃️",
+  Spark: "⚡",
   TypeScript: "📘",
-  JavaScript: "✨",
   Go: "🔷",
-  "C++": "⚙️",
   React: "⚛️",
-  "Node.js": "🟢",
+  Airflow: "🌀",
 };
 
 export default function About() {
@@ -61,8 +61,8 @@ export default function About() {
           </h2>
           <div className="w-20 h-1 bg-[var(--accent)] mx-auto rounded-full mb-6" />
           <p className="text-lg text-[var(--muted)] max-w-2xl mx-auto">
-            I&apos;m a software engineer with a passion for building innovative solutions 
-            that leverage the power of AI and modern web technologies.
+            I&apos;m a Data Engineer at Nike with an MTech from IIT Gandhinagar. I build 
+            scalable data solutions and love creating side projects that solve real problems.
           </p>
         </motion.div>
 

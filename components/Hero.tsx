@@ -45,7 +45,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <span>Software Engineer</span>
+          <span>Data Engineer II</span>
           <span className="text-[var(--accent)]">@</span>
           <span className="flex items-center gap-1">
             <Building2 size={20} className="text-[var(--accent)]" />
@@ -60,10 +60,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          Passionate about building innovative solutions with{" "}
-          <span className="text-[var(--accent)] font-medium">AI/ML</span>,{" "}
-          <span className="text-[var(--accent)] font-medium">full-stack development</span>, and{" "}
-          <span className="text-[var(--accent)] font-medium">automation</span>. Turning complex problems into elegant solutions.
+          MTech from{" "}
+          <span className="text-[var(--accent)] font-medium">IIT Gandhinagar</span>. Building scalable{" "}
+          <span className="text-[var(--accent)] font-medium">data pipelines</span>,{" "}
+          <span className="text-[var(--accent)] font-medium">AI/ML infrastructure</span>, and{" "}
+          <span className="text-[var(--accent)] font-medium">automation tools</span> at Nike.
         </motion.p>
 
         {/* Location */}

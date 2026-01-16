@@ -16,25 +16,26 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shoaib Alam | Software Engineer",
+  title: "Shoaib Alam | Data Engineer at Nike",
   description:
-    "Software Engineer at Nike specializing in AI/ML, full-stack development, and building innovative solutions. Based in Bangalore, India.",
+    "Data Engineer II at Nike specializing in ETL pipelines, AI/ML infrastructure, and data solutions. MTech from IIT Gandhinagar. Based in Bangalore, India.",
   keywords: [
     "Shoaib Alam",
-    "Software Engineer",
+    "Data Engineer",
     "Nike",
+    "ETL",
+    "Data Pipelines",
     "AI",
     "Machine Learning",
-    "Full Stack Developer",
     "Python",
-    "TypeScript",
+    "IIT Gandhinagar",
     "Bangalore",
   ],
   authors: [{ name: "Shoaib Alam" }],
   openGraph: {
-    title: "Shoaib Alam | Software Engineer",
+    title: "Shoaib Alam | Data Engineer at Nike",
     description:
-      "Software Engineer at Nike specializing in AI/ML and full-stack development.",
+      "Data Engineer II at Nike specializing in ETL, AI/ML infrastructure, and data solutions.",
     url: "https://alamshoaib134.github.io",
     siteName: "Shoaib Alam Portfolio",
     locale: "en_US",
@@ -42,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shoaib Alam | Software Engineer",
+    title: "Shoaib Alam | Data Engineer at Nike",
     description:
-      "Software Engineer at Nike specializing in AI/ML and full-stack development.",
+      "Data Engineer II at Nike specializing in ETL, AI/ML infrastructure, and data solutions.",
     creator: "@alamshoaib134",
   },
   icons: {
