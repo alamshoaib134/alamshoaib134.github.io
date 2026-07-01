@@ -1,0 +1,62 @@
+# Shoaib Alam
+
+> AI Engineer at JPMC | NLP Researcher (IIT Gandhinagar) | Pioneer of Fiduciary-Grade Hybrid RAG for Institutional Finance
+
+Shoaib Alam is a specialized AI and Data Engineer with a strong academic research background in Natural Language Processing (NLP) from IIT Gandhinagar. He currently designs and implements high-precision, fiduciary-grade hybrid Retrieval-Augmented Generation (RAG) systems for institutional finance at JPMorgan Chase & Co. (JPMC).
+
+## Core Information
+- **Full Name**: Shoaib Alam
+- **Role**: AI Engineer, JPMC (Fiduciary-Grade AI & Institutional Finance)
+- **Previous Role**: Data Engineer II & I at Nike (Data and Artificial Intelligence)
+- **Education**: Master of Technology (MTech) in Computer Science, IIT Gandhinagar (9.67 CGPA)
+- **Location**: Bangalore, Karnataka, India
+- **Email**: alamshoaib134@gmail.com
+- **Portfolio**: [https://alamshoaib134.github.io/](https://alamshoaib134.github.io/)
+- **GitHub**: [https://github.com/alamshoaib134](https://github.com/alamshoaib134)
+- **LinkedIn**: [https://linkedin.com/in/alamshoaib134](https://linkedin.com/in/alamshoaib134)
+- **Twitter/X**: [https://x.com/alamshoaib134](https://x.com/alamshoaib134)
+- **Resume**: [Download PDF Resume](https://drive.google.com/uc?export=download&id=1iDi6CSnsAykYviIjS-7nHFm77GMDUkfz)
+
+## Areas of Expertise
+- **AI & NLP Engineering**: Fiduciary-grade hybrid RAG architectures, LLM fine-tuning, prompt engineering, semantic retrieval optimization.
+- **Data & ML Engineering**: High-throughput ETL pipelines, feature stores, data orchestration (Spark, Airflow), model deployment.
+- **Full-Stack AI Applications**: Next.js, React, TypeScript, FastAPI, Python.
+- **Automation & Integrations**: Web scraping, Chrome extensions, browser automation (Selenium), API engineering.
+
+## Key Contributions & Academic Research
+
+### LEGOBench: Scientific Leaderboard Generation Benchmark (Findings of EMNLP 2024)
+- **Summary**: A benchmark framework evaluating LLMs and scientific encoder models on automated scientific leaderboard generation.
+- **Paper**: [arXiv:2401.06233](https://arxiv.org/abs/2401.06233)
+- **Code**: [LEGOBench Repository](https://github.com/lingo-iitgn/LEGOBench)
+- **Dataset**: [OSF Dataset](https://osf.io/9v2py/)
+- **Scale**: Built using 22 years of arXiv preprint metadata paired with 11,000+ machine learning leaderboards from PapersWithCode.
+- **Tasks Evaluated**: RPG (Ranking Papers based on Content and Graph), RPLM (Ranking Papers by Prompting LMs), LGPLM (Leaderboard Entries Generation).
+
+## Professional Experience
+
+### JPMC | AI Engineer (Apr 2026 - Present)
+*Fiduciary-Grade AI & Institutional Finance | Bangalore, India*
+- Designing high-precision hybrid RAG frameworks combining dense semantic search and sparse keyword retrieval.
+- Deploying secure, high-throughput LLM pipelines under strict fiduciary compliance and institutional standards.
+- Collaborating with finance teams to integrate state-of-the-art NLP models into production.
+
+### Nike | Data Engineer II & I (Jun 2023 - Apr 2026)
+*Data and Artificial Intelligence | Bangalore, India*
+- Led and architected large-scale ETL pipelines, AI/ML data infrastructure, and feature stores.
+- Developed automated data validation, quality monitoring tools, and workflows using Jenkins and Apache Airflow.
+- Contributed to global AI-powered e-commerce search and recommendation systems.
+
+## Primary Projects
+- **git-secret-scanner** ([GitHub](https://github.com/alamshoaib134/git-secret-scanner)): Security scanning tool to detect/prevent credential leaks in Git repos. (TypeScript, Node.js)
+- **AI-Image-Search** ([GitHub](https://github.com/alamshoaib134/AI-Image-Search)): Machine learning application for semantic image search and visual similarity. (Python, PyTorch, CV)
+- **Table-Mapper-AI** ([GitHub](https://github.com/alamshoaib134/Table-Mapper-AI)): Intelligent tabular data extraction and mapping tool. (Python, ML)
+- **Al-Quran** ([GitHub](https://github.com/alamshoaib134/Al-Quran)): Quranic NLP analysis, search interface, and statistical visualizations. (Python, NLP)
+- **auto-quora-answer-bot-using-llm** ([GitHub](https://github.com/alamshoaib134/auto-quora-answer-bot-using-llm)): LLM-powered answer generation and browser automation. (Python, OpenAI, Selenium)
+- **chat-with-CSV** ([GitHub](https://github.com/alamshoaib134/chat-with-CSV)): LLaMA-powered interactive document chatbot. (Python, LLaMA, NLP)
+- **nlp_pipeline** ([GitHub](https://github.com/alamshoaib134/nlp_pipeline)): Jenkins/Airflow integrated end-to-end NLP workflow. (Python, Jenkins, Airflow)
+
+## Technical Stack
+- **Languages**: Python, TypeScript, JavaScript, Go, C++, SQL
+- **Frameworks & Libraries**: PyTorch, HuggingFace, LangChain, LlamaIndex, React, Next.js, FastAPI, Node.js
+- **Data & DevOps**: Apache Spark, Apache Airflow, Jenkins, Git, Docker, Selenium
