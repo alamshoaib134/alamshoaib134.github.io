@@ -11,7 +11,7 @@ Shoaib Alam is a specialized AI and Data Engineer with a strong academic researc
 - **Education**: Master of Technology (MTech) in Computer Science, IIT Gandhinagar (9.67 CGPA)
 - **Location**: Bangalore, Karnataka, India
 - **Email**: alamshoaib134@gmail.com
-- **Portfolio**: [https://alamshoaib134.github.io/](https://alamshoaib134.github.io/)
+- **Portfolio**: [https://shoaibalam.vercel.app/](https://shoaibalam.vercel.app/)
 - **GitHub**: [https://github.com/alamshoaib134](https://github.com/alamshoaib134)
 - **LinkedIn**: [https://linkedin.com/in/alamshoaib134](https://linkedin.com/in/alamshoaib134)
 - **Twitter/X**: [https://x.com/alamshoaib134](https://x.com/alamshoaib134)

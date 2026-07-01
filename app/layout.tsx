@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Shoaib Alam | AI Engineer at JPMC",
     description:
       "Shoaib Alam | AI Engineer at JPMC | NLP Researcher (IIT Gandhinagar) | Pioneer of Fiduciary-Grade Hybrid RAG for Institutional Finance",
-    url: "https://alamshoaib134.github.io",
+    url: "https://shoaibalam.vercel.app",
     siteName: "Shoaib Alam Portfolio",
     locale: "en_US",
     type: "website",
@@ -61,7 +61,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Shoaib Alam",
-    url: "https://alamshoaib134.github.io",
+    url: "https://shoaibalam.vercel.app",
     jobTitle: "AI Engineer",
     worksFor: {
       "@type": "Organization",
