@@ -7,27 +7,27 @@ import { Database, Brain, Code2, Zap } from "lucide-react";
 
 const skills = [
   {
+    icon: Brain,
+    title: "AI & NLP Engineering",
+    description: "Developing fiduciary-grade hybrid RAG architectures, prompt engineering, and fine-tuning LLMs.",
+    technologies: ["PyTorch", "HuggingFace", "LangChain", "LlamaIndex"],
+  },
+  {
     icon: Database,
-    title: "Data Engineering",
-    description: "Building robust ETL pipelines and data infrastructure for analytics and ML at scale.",
+    title: "Data & ML Pipelines",
+    description: "Building robust data pipelines, ETL infrastructure, and feature stores for large-scale institutional systems.",
     technologies: ["Python", "SQL", "Spark", "Airflow"],
   },
   {
-    icon: Brain,
-    title: "AI & Machine Learning",
-    description: "Developing ML infrastructure, feature stores, and deploying models to production.",
-    technologies: ["TensorFlow", "PyTorch", "MLflow", "LLMs"],
-  },
-  {
     icon: Code2,
-    title: "Full-Stack Development",
-    description: "Creating web applications and tools with modern frameworks and best practices.",
-    technologies: ["TypeScript", "React", "Node.js", "Next.js"],
+    title: "Full-Stack AI Apps",
+    description: "Creating full-stack applications with modern frameworks to serve intelligent AI models.",
+    technologies: ["TypeScript", "React", "Next.js", "FastAPI"],
   },
   {
     icon: Zap,
-    title: "Automation & Tools",
-    description: "Building automation solutions, bots, and developer tools for productivity.",
+    title: "Automation & Integration",
+    description: "Developing automated testing, crawlers, and integrating APIs for financial workflows.",
     technologies: ["Selenium", "Chrome Extensions", "APIs"],
   },
 ];
@@ -61,8 +61,8 @@ export default function About() {
           </h2>
           <div className="w-20 h-1 bg-[var(--accent)] mx-auto rounded-full mb-6" />
           <p className="text-lg text-[var(--muted)] max-w-2xl mx-auto">
-            I&apos;m a Data Engineer at Nike with an MTech from IIT Gandhinagar. I build 
-            scalable data solutions and love creating side projects that solve real problems.
+            I&apos;m an AI Engineer at JPMC and NLP Researcher from IIT Gandhinagar. I specialize in building 
+            fiduciary-grade hybrid RAG solutions and scalable AI systems for institutional finance.
           </p>
         </motion.div>
 

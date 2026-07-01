@@ -7,22 +7,40 @@ import { Briefcase, Calendar, MapPin, GraduationCap } from "lucide-react";
 
 const experiences = [
   {
-    company: "Nike",
-    role: "Data Engineer II",
-    team: "Data and Artificial Intelligence",
-    period: "Oct 2024 - Present",
-    duration: "1 yr 4 mos",
+    company: "JPMC",
+    role: "AI Engineer",
+    team: "Fiduciary-Grade AI & Institutional Finance",
+    period: "Apr 2026 - Present",
+    duration: "4 mos",
     location: "Bengaluru, Karnataka, India",
     type: "Full-time · On-site",
     description:
-      "Leading data engineering initiatives for Nike's AI and analytics platforms. Building scalable data pipelines and ML infrastructure to power data-driven decisions.",
+      "Pioneering fiduciary-grade hybrid Retrieval-Augmented Generation (RAG) systems for institutional finance and large-scale AI applications.",
     highlights: [
-      "Architecting ETL pipelines for large-scale data processing",
-      "Building AI/ML data infrastructure and feature stores",
-      "Developing automation tools for data quality and monitoring",
-      "Collaborating with data scientists on ML model deployment",
+      "Designing robust, high-precision hybrid RAG frameworks for financial analysts",
+      "Deploying secure, high-throughput LLM pipelines with strict fiduciary compliance",
+      "Optimizing hybrid retrieval mechanisms combining dense semantic search and sparse keyword search",
+      "Collaborating with finance teams to deploy state-of-the-art NLP models into production",
     ],
     current: true,
+  },
+  {
+    company: "Nike",
+    role: "Data Engineer II",
+    team: "Data and Artificial Intelligence",
+    period: "Oct 2024 - Apr 2026",
+    duration: "1 yr 7 mos",
+    location: "Bengaluru, Karnataka, India",
+    type: "Full-time · On-site",
+    description:
+      "Led data engineering initiatives for Nike's AI and analytics platforms. Built scalable data pipelines and ML infrastructure to power data-driven decisions.",
+    highlights: [
+      "Architected ETL pipelines for large-scale data processing",
+      "Built AI/ML data infrastructure and feature stores",
+      "Developed automation tools for data quality and monitoring",
+      "Collaborated with data scientists on ML model deployment",
+    ],
+    current: false,
   },
   {
     company: "Nike",
@@ -52,7 +70,7 @@ const education = [
     period: "Jul 2021 - Jul 2023",
     grade: "9.67 CGPA",
     highlights: [
-      "Focus on Machine Learning and Data Science",
+      "Focus on Machine Learning and NLP (Natural Language Processing) research",
       "Research in NLP and Computer Vision",
     ],
   },
@@ -88,7 +106,7 @@ export default function Experience() {
           </h2>
           <div className="w-20 h-1 bg-[var(--accent)] mx-auto rounded-full mb-6" />
           <p className="text-lg text-[var(--muted)] max-w-2xl mx-auto">
-            2+ years at Nike, building data infrastructure and AI solutions at scale.
+            Professional experience in building fiduciary-grade AI solutions and scalable data infrastructure.
           </p>
         </motion.div>
 

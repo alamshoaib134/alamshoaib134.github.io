@@ -4,8 +4,45 @@ export interface Project {
   tech: string[];
   github: string;
   demo?: string;
+  paper?: string;
   featured?: boolean;
 }
+
+export interface Publication {
+  title: string;
+  conference: string;
+  abstract: string;
+  authors: string[];
+  github: string;
+  paper: string;
+  dataset?: string;
+  metrics: {
+    datasetScale: string;
+    tasks: string[];
+  };
+}
+
+export const publications: Publication[] = [
+  {
+    title: "LEGOBench: Scientific Leaderboard Generation Benchmark",
+    conference: "Findings of EMNLP 2024",
+    abstract:
+      "LEGOBench is a benchmark framework designed to evaluate systems that automatically generate scientific leaderboards. The research evaluates popular encoder-only scientific language models and decoder-only Large Language Models (LLMs) across multiple graph-based and language model-based configurations, revealing significant performance gaps in state-of-the-art systems.",
+    authors: ["Shoaib Alam", "Shruti Singh", "Husain Malwat", "Mayank Singh"],
+    github: "https://github.com/lingo-iitgn/LEGOBench",
+    paper: "https://arxiv.org/abs/2401.06233",
+    dataset: "https://osf.io/9v2py/",
+    metrics: {
+      datasetScale:
+        "Curated using 22 years of preprint submission data from arXiv combined with over 11,000 machine learning leaderboards from the PapersWithCode portal.",
+      tasks: [
+        "Ranking Papers based on Content and Graph (RPG)",
+        "Ranking Papers by Prompting Language Models (RPLM)",
+        "Leaderboard Entries Generation by Prompting Language Models (LGPLM)",
+      ],
+    },
+  },
+];
 
 export const projects: Project[] = [
   {

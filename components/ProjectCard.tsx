@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Folder, Play, Star, GitFork } from "lucide-react";
+import { ExternalLink, Github, Folder, Play, Star, GitFork, BookOpen, Database } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { useEffect, useState } from "react";
 
@@ -21,11 +21,13 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const repoName = project.github.split("/").pop();
-        if (!repoName) return;
+        const urlParts = project.github.replace("https://github.com/", "").split("/");
+        if (urlParts.length < 2) return;
+        const owner = urlParts[0];
+        const repoName = urlParts[1];
         
         const response = await fetch(
-          `https://api.github.com/repos/alamshoaib134/${repoName}`,
+          `https://api.github.com/repos/${owner}/${repoName}`,
           {
             headers: {
               Accept: "application/vnd.github.v3+json",
@@ -48,6 +50,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
     fetchStats();
   }, [project.github]);
 
+  const isDataset = project.demo?.includes("osf.io");
+
   return (
     <motion.div
       className="group relative bg-[var(--card-bg)] rounded-2xl border border-[var(--card-border)] p-6 hover:border-[var(--accent)]/30 hover:shadow-xl transition-all duration-300"
@@ -62,15 +66,26 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           <Folder className="w-6 h-6 text-[var(--accent)]" />
         </div>
         <div className="flex items-center gap-3">
+          {project.paper && (
+            <a
+              href={project.paper}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--muted)] hover:text-[var(--accent)] transition-colors"
+              aria-label={`Read research paper for ${project.name}`}
+            >
+              <BookOpen size={20} />
+            </a>
+          )}
           {project.demo && (
             <a
               href={project.demo}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[var(--muted)] hover:text-green-500 transition-colors"
-              aria-label={`View live demo of ${project.name}`}
+              aria-label={isDataset ? `View dataset of ${project.name}` : `View live demo of ${project.name}`}
             >
-              <Play size={20} />
+              {isDataset ? <Database size={20} /> : <Play size={20} />}
             </a>
           )}
           <a
@@ -127,18 +142,32 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
       )}
 
-      {/* Demo Badge */}
-      {project.demo && (
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1 mb-4 text-sm font-medium bg-green-500/10 text-green-600 dark:text-green-400 rounded-full hover:bg-green-500/20 transition-colors"
-        >
-          <Play size={14} />
-          Live Demo
-        </a>
-      )}
+      {/* Badges (Paper/Demo) */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        {project.paper && (
+          <a
+            href={project.paper}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-sm font-medium bg-blue-500/10 text-blue-600 dark:text-blue-400 rounded-full hover:bg-blue-500/20 transition-colors"
+          >
+            <BookOpen size={14} />
+            Research Paper
+          </a>
+        )}
+
+        {project.demo && (
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-sm font-medium bg-green-500/10 text-green-600 dark:text-green-400 rounded-full hover:bg-green-500/20 transition-colors"
+          >
+            {isDataset ? <Database size={14} /> : <Play size={14} />}
+            {isDataset ? "Dataset" : "Live Demo"}
+          </a>
+        )}
+      </div>
 
       {/* Tech Stack */}
       <div className="flex flex-wrap gap-2 mt-auto">
